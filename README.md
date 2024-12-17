@@ -1,7 +1,8 @@
-# In Progress
+# In Progress.....
 
-## /Reports
-This directory includes the necessary files (PPT's & Synapsis)
+## /Directories
+  1. Reports:
+    This directory includes the necessary files (PPT's & Synapsis)
 
-## /Reference
-This directory contains the research papers as references.
+  2. Reference:
+    This directory contains the research papers as references.
