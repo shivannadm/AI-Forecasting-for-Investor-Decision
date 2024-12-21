@@ -1,5 +1,5 @@
 import pandas as pd
-from sklearn.externals import joblib  # If you're using a pickled model
+import joblib  # If you're using a pickled model
 
 def process_dataset_and_predict(dataset):
     # Load the dataset (assuming CSV for simplicity)
