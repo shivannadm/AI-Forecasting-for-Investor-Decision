@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 import pandas as pd
 from sklearn.externals import joblib  # If you're using a pickled model
 
@@ -13,3 +15,12 @@ def process_dataset_and_predict(dataset):
 
     # Return predictions (you can format it as needed for display)
     return predictions
+
+
+
+def save_plot_to_file(filepath):
+    plt.figure(figsize=(12, 6))
+    # (Generate your plot here)
+    plt.title("Generated Plot")
+    plt.savefig(filepath)
+    plt.close()

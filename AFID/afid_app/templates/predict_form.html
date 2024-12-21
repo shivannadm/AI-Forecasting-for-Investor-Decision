@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Dataset</title>
+</head>
+<body>
+    <h2>Upload Your Dataset</h2>
+    <form action="{% url 'predict_view' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div>
+            <label for="dataset">Select a dataset:</label>
+            <input type="file" name="dataset" id="dataset" required>
+        </div>
+        <button type="submit">Upload and Predict</button>
+    </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Dataset</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="file"] {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Upload Your Dataset</h2>
+    
+    <form action="{% url 'predict_form' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+        <div>
+            <label for="dataset">Select a dataset to upload:</label>
+            <input type="file" name="dataset" id="dataset" required>
+        </div>
+
+        <button type="submit">Upload and Predict</button>
+    </form>
+
+    {% if form.errors %}
+        <div class="error">
+            <p>Please correct the errors in the form and try again.</p>
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>

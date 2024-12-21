@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Results</title>
+</head>
+<body>
+    <h2>Prediction Results</h2>
+    {% if predictions %}
+        <h3>Predicted Output:</h3>
+        <pre>{{ predictions }}</pre>
+    {% else %}
+        <p>No predictions available.</p>
+    {% endif %}
+</body>
+</html>
