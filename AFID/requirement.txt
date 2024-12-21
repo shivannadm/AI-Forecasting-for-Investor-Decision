@@ -1,0 +1,3 @@
+# requirement.txt
+# Django Latest version
+Django==5.0.2
