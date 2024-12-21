@@ -1,4 +1,4 @@
-#AFID: AI Forecasting for Investor Decision
+# AFID: AI Forecasting for Investor Decision
 
 ## In progress
 1. Reports: The directory includes the PPTs and synapsis of the project.
