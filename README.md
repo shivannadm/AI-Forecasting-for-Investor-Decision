@@ -1,3 +1,4 @@
+*Note: Progress is still in progress!*
 # AFID: AI-Forecasting-for-Investor-Decision
 
 ## Project Overview
