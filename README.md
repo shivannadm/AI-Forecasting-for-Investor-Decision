@@ -66,6 +66,7 @@ bash
 ---
 
 ## Folder Structure
+```
 plaintext
 high-frequency-stock-prediction/
 │
@@ -76,7 +77,7 @@ high-frequency-stock-prediction/
 ├── README.md             # Project documentation
 └── results/              # Output predictions and performance metrics
 
-
+```
 ---
 
 ## Contributors
