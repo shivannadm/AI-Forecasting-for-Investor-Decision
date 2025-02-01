@@ -81,7 +81,7 @@ high-frequency-stock-prediction/
 ```
 ---
 
-## Contributors
+## Contributor
 - **Shivanna** (shivannadm6@gmail.com)
 
 ---
